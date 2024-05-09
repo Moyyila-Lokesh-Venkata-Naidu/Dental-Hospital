@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+    <!-- Nav Bar -->
+    <div id="nav-bar">
+
+        <nav class="container-1">
+            <img src="dental-logo.png" alt="" class="logo">
+            <div class="nav-links" id="sidemenu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="dentist.html">Dentist's</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark" id="cross" onclick="closemenu()"></i>
+            </div>
+            <i class="fa-solid fa-bars"  id="menu" onclick="openmenu()"></i>
+            <img src="dental-logo.png" alt="" class="logo" id="logo-2">
+        </nav>
+    </div>
+
+
+    <!-- About -->
+    <section id="about">
+        <div id="about-us">
+            <div id="about-img">
+                <img src="about.jpg" alt="">
+            </div>
+            <div id="about-txt">
+                <h1>ABOUT US</h1>
+                <P>At the heart of our practice is a commitment to patient comfort and satisfaction. We understand that visiting the dentist can be stressful for some, which is why we go above and beyond to create a positive experience for every patient. From our cozy reception area to our state-of-the-art treatment rooms, we've designed our clinic with your comfort in mind.But what truly sets us apart is our genuine passion for what we do. We believe in forming lasting relationships with our patients based on trust, transparency, and respect. When you choose Happy Dental Clinic, you're not just another appointment – you're part of our dental family.At the heart of our practice is a commitment to patient comfort and satisfaction. We understand that visiting the dentist can be stressful for some, which is why we go above and beyond to create a positive experience for every patient. From our cozy reception area to our state-of-the-art treatment rooms, we've designed our clinic with your comfort in mind.</P>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="vis-mis" class="reveal">
+        <div id="vis">
+            <div id="vis-img">
+                <img src="vision-img.jpg" alt="">
+            </div>
+            <div id="vis-txt">
+                <h1>VISION</h1>
+                <p>Our vision is to be the leading provider of comprehensive dental care, known for our commitment to excellence, compassion, and innovation. We strive to redefine the dental experience by fostering a culture of continuous learning, collaboration, and personalized patient care.We seek to grow our practice sustainably while maintaining our core values and commitment to excellence.</p>
+            </div>
+        </div>
+        <div id="mis">
+            <div id="mis-img">
+                <img src="mission-image.jpg" alt="">
+            </div>
+            <div id="mis-txt">
+                <h1>MISSION</h1>
+                <p>Our mission is to provide exceptional dental care with a focus on compassion, integrity, and patient-centered excellence. We are dedicated to improving the oral health and overall well-being of our patients by delivering personalized, high-quality dental services in a welcoming and comfortable environment. We are committed to serving our community beyond the walls of our clinic.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- booking -->
+    <section id="booking" > 
+        <div id="appointment" class="reveal" >
+            <h1 class="appoint">APPOINTMENT</h1>
+            <div class="container5">
+                <div class="appimage">
+                    <img src="appointment.jpg" class="appointment-image">
+                </div>
+                <div class="booking">
+                    <h3>Appointment Form</h3>
+                    <input type="text" placeholder="Your Name" class="box">
+                    <input type="text" placeholder="Your Email ID" class="box">
+                    <input type="text" placeholder="Mobile Number" class="box">
+                    <input type="date" class="box">
+                    <input type="time" class="box">
+                    <div class="submit-cancel">
+                        <input type="submit" value="Book Now" id="btn">
+                        <input type="submit" value="Cancel" id="btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <div id="footer">
+        <div id="contact" class="reveal">
+            <h1>Contact Info</h1>
+            <p>Have a question, suggestion, or just want to say hello? We'd love to hear from you! Drop us a message using the form below, and we'll get back to you as soon as possible. </p>
+            <div id="links">
+                <h4><i class="fa-solid fa-house"></i>Kothaguda , Hyderabad</h4>
+                <h4><i class="fa-solid fa-phone"></i>+91 9121557571</h4>
+                <h4><i class="fa-solid fa-envelope"></i> ngs@pvt.com</h4>
+                <h4><i class="fa-solid fa-globe"></i>ngs@pvt.com</h4>
+            </div>
+        </div>
+        <div id="our-serives" class="reveal">
+            <h1>Our Services</h1>
+            <div id="services-list">
+                <h4> >>Dental Dictionary</h4>
+                <h4> >>Dental Sealands</h4>
+                <h4> >>Dental Implants</h4>
+                <h4> >>General Dentistry</h4>
+                <h4> >>Sedation Dentistry</h4>
+            </div>
+        </div>
+        <div id="quick-links" class="reveal">
+            <h1>Quick Links</h1>
+            <div id="q-links">
+                <a href="index.html"><h4>Index</h4></a>
+                <a href="about.html"><h4>About</h4></a>
+                <a href="services.html"><h4>Services</h4></a>
+                <a href="dentist.html"><h4>Dentist</h4></a>
+                <a href="contact.html"><h4>Contact</h4></a>
+            </div>
+        </div>
+        <div id="Opening-hours" class="reveal">
+            <h1>Opening Hours</h1>
+            <div id="timings">
+                <h4>Sunday 8:00am-10:00pm</h4>
+                <h4>Monday 8:00am-10:00pm</h4>
+                <h4>Tuesday 8:00am-10:00pm</h4>
+                <h4>Wednesday 8:00am-10:00pm</h4>
+                <h4>Thursday 8:00am-10:00pm</h4>
+                <h4>Friday 8:00am-10:00pm</h4>
+                <h4>Saturday 8:00am-10:00pm</h4>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- copy right -->
+
+    <div id="copy-right">
+        <h3>Copyright By NGS.PVT.LTD-2024</h3>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>

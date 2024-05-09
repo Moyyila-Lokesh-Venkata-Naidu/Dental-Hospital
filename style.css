@@ -1,0 +1,858 @@
+html{
+    scroll-behavior:smooth;
+}
+
+/* nav-bar */
+#nav-bar{
+    height: 15vh;
+    padding-left: 25px;
+    background-color: rgb(21, 21, 89);
+}
+
+.container-1{
+    display: flex;
+    background:transparent;
+}
+.logo{
+    width: 6%;
+    margin-top: 10px;
+    margin-left: 15px;
+    animation-name: logo-anime;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+#logo-2{
+    margin-left: 200px;
+}
+.nav-links{
+    padding-top: 40px;
+}
+.nav-links a{
+    text-decoration: none;
+    margin-left: 125px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+}
+
+.nav-links a:hover{
+    background-color: white;
+    color: rgb(21, 21, 89);
+}
+@keyframes logo-anime {
+    0%{
+        transform: rotateY(0deg);
+    }
+    
+    25%{
+        transform: rotateY(90deg);
+    }
+    
+    50%{
+        transform: rotateY(180deg);
+    }
+    
+    75%{
+        transform: rotateY(90deg);
+    }
+    
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+
+
+
+/* intro */
+#intro{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 25px;
+}
+
+.container-2{
+    padding-top: 5%;
+    padding-left: 50px;
+    font-size: xx-large;
+    text-align: center;
+    color: rgb(21, 21, 89);
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation-delay: 0s;
+    animation: showcontent 0.5s   linear 1 forwards;
+}
+@keyframes showcontent{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+.container-2 button{
+    padding: 10px;
+    border: none;
+    font-size: 25px;
+    border-radius: 8px;
+    font-weight: bolder;
+    border-width: 5px;
+    color: white;
+    background-color: rgb(21, 21, 89);
+    animation-name: button;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+@keyframes button {
+    0%{
+        border-color: rgb(129, 31, 179);
+        background-color: rgb(129, 31, 179);
+    }
+    
+    25%{
+        border-color: rgb(16, 86, 126);
+        background-color: rgb(16, 86, 126);
+    }
+    
+    50%{
+        border-color: rgb(214, 111, 164);
+        background-color: rgb(214, 111, 164);
+    }
+    
+    75%{
+        border-color: rgb(191, 62, 146);
+        background-color: rgb(191, 62, 146);
+    }
+    
+    100%{
+        border-color: rgb(125, 36, 141);
+        background-color: rgb(125, 36, 141);
+    }
+}
+.container-2 button:hover{
+    background-color: rgb(47, 47, 101);
+}
+.container-4{
+    transform: translateX(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation-delay: 0s;
+    animation: showcontent 0.5s   linear 1 forwards;
+}
+@keyframes showcontent{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0)
+    }
+}
+.container-4 img{
+    width: 100%;
+    border-radius: 10%;
+}
+
+
+
+/* simple services */
+#services{
+    padding: 30px 0;
+    border-style: solid;
+    border-color: rgb(15, 15, 80);
+    border-radius: 35px;
+    border-width: 5px;
+    margin-top: 50px;
+    background-color: whitesmoke;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+    margin-top: 50px;
+    padding: 0px 35px;
+}
+.services-list div{
+    background-color: rgb(20, 20, 76);
+    padding: 40px;
+    font-size: 15px;
+    border-radius: 15px;
+    transition: background 0.5s, transform 0.5s;
+}
+#serve{
+    text-align: center;
+    padding-left: 50px;
+    font-size: 60px;
+    font-weight: 600;
+    color:rgb(20, 20, 76);
+}
+.h2{
+    color: whitesmoke;
+    text-align: center;
+}
+.services-list div:hover{
+    transform: translate(-20px);
+    background-color:  rgb(46, 46, 122);
+}
+.special-logo{
+    font-size: 25px;
+    color: white;
+    margin-left: 160px;
+}
+
+
+
+/* gallery */
+#gallery{
+    padding: 25px;
+    margin-top: 50px;
+    border-radius: 15px;
+    background-color: rgb(21, 21, 89);
+}
+#gallery h1{
+    text-align: center;
+    font-size: 60px;
+    color: whitesmoke;
+}
+#images{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 40px;
+}
+#images img{
+    border-radius: 15px;
+    width: 93%;
+    transition: background 0.5s, transform 0.5s;
+}
+#images img:hover{
+    transform: translateY(-20px);
+    opacity: 0.8;
+}
+
+/* appointment */
+#appointment{
+    margin-top: 45px;
+    padding: 15px;
+    border-style: solid;
+    border-color: rgb(20, 20, 76);
+    border-radius: 15px;
+    border-width: 5px;
+} 
+.appoint{
+    text-align: center;
+    font-size: 60px;
+    color: rgb(20, 20, 76);
+}
+.container5{
+    display: flex;
+    padding: 0px;
+    border-radius: 15px;
+    border-width: 5px;
+}
+.booking .box{
+    width: 70%;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    text-transform: none;
+    border-color: whitesmoke;
+
+}
+.box:hover{
+    background-color: rgb(236, 220, 220);
+    
+}
+.booking h3{
+    color: whitesmoke;
+
+    font-size: 2rem;
+}
+.appimage{
+    flex-basis: 50%;
+    text-align: center;
+    align-items:baseline
+}
+.appointment-image{
+    width: 80%;
+    margin-top: 20px;
+}
+.booking{
+    flex-basis: 50%;
+    background-color:  rgb(20, 20, 76);
+    text-align: center;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding: 20px 10px;
+    border-radius: 15px;
+}
+#btnn{
+    width: 20%;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+    font-weight: bolder;
+    color:  rgb(20, 20, 76);
+}
+#btnn:hover{
+    background-color: rgb(23, 23, 53);
+    color: whitesmoke;
+}
+#btnn:active{
+    color: gold;
+}
+.submit-cancel{
+    margin-top: 35px;
+}
+.submit-cancel input{
+    padding-right: 15px;
+}
+/* footer */
+#footer{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    padding-left: 40px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: rgb(21, 21, 89);
+    margin-top: 40px;
+}
+#contact{
+    padding: 25px;
+    text-align: center;
+}
+#our-serives {
+    padding: 25px;
+    text-align: center;
+}
+#Opening-hours{
+    padding: 25px;
+    text-align: center;
+}
+#quick-links{
+    padding: 25px;
+    text-align: center;
+}
+#q-links a{
+    text-decoration: none;
+}
+#links{
+    text-align:left;
+    margin-left: 90px;
+}
+/* #Opening-hours{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation-delay: 0.2s;
+    animation: showcontent 0.5s 1s  linear 1 forwards;
+} */
+#timings{
+    word-spacing: 25px;
+    text-align: center;
+    /* animation-delay: 0.2s; */
+}
+#links h4:hover{
+    color: rgb(149, 39, 88);
+}
+#services-list h4:hover{
+    color: rgb(149, 39, 88);
+}
+#timings h4:hover{
+    color: rgb(149, 39, 88);
+}
+#q-links a:hover{
+    color: rgb(149, 39, 88);
+}
+
+
+
+
+/* revealing section */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+/* copy right */
+#copy-right{
+    text-align: center;
+    background-color: rgb(21, 21, 89);
+    color: whitesmoke;
+    padding: 1%;
+}
+
+
+/* about */
+#about-us{
+    display: flex;
+    padding: 15px;
+    background-color: whitesmoke;
+    margin-top: 20px;
+}
+#about-img img{
+    width: 600px;
+    height: 65vh;
+    border-radius: 15px;    
+}
+
+#about-txt{
+    padding-left: 10px;
+    color:  rgb(21, 21, 89);
+}
+
+#about-txt h1{
+    font-size: 40px;
+    text-align: center;
+}
+#about-txt p{
+    text-align: justify;
+    font-size: 25px;
+    
+}
+
+#vis-mis{
+    display: flex;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: rgb(21, 21, 89);
+}
+#vis{
+    display: flex;
+}
+#mis{
+    display: flex;
+}
+#vis-img img{
+    width: 200px;
+    border-radius: 10px;
+}
+#mis-img img{
+    width: 200px;
+    border-radius: 10px;
+}
+#vis-txt{
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#vis-txt h1{
+    text-align: center;
+}
+#vis-txt p{
+    text-align: justify;
+}
+#mis-txt{
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#mis-txt h1{
+    text-align: center;
+}
+#mis-txt p{
+    text-align: justify;
+}
+
+/* SERVICES */
+#servicestxt{
+    display: flex;
+    padding-top: 25px;
+    margin-top: 40px;
+}
+#servicesimg img{
+    width: 600px;
+height: 65vh;
+border-radius: 15px;   
+} 
+
+#services-txt{
+    padding-left: 40px;
+    color:  rgb(21, 21, 89);
+}
+#services-txt h1{
+    text-align: center;
+    font-size: 40px;
+}
+#services-txt p{
+    font-size: 25px;
+    line-height: 38px;
+}
+#types{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 35px;
+    padding: 25px;
+    margin-top: 45px;
+    background-color: whitesmoke;
+}
+#easy-appointment{
+    padding: 60px;   
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: inset 4px 3px 8px 1px #969696;
+  	-webkit-box-shadow: inset 4px 3px 8px 1px #969696;
+}
+#easy-appointment i{
+    color: rgb(40, 40, 106);
+    font-size: 40px;
+}
+#emergency{
+    padding: 60px;   
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: inset 4px 3px 8px 1px #969696;
+  	-webkit-box-shadow: inset 4px 3px 8px 1px #969696;
+}
+#emergency i{
+    color: rgb(40, 40, 106);
+    font-size: 40px;
+}
+#service24{
+    padding: 60px;   
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: inset 4px 3px 8px 1px #969696;
+  	-webkit-box-shadow: inset 4px 3px 8px 1px #969696;
+}
+#service24 i{
+    color: rgb(40, 40, 106);
+    font-size: 40px;
+}
+
+/* treatments */
+#treatments{
+    padding: 60px;
+    margin-top: 50px;
+    background-color: rgb(20, 20, 76);
+}
+#list-treat{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 25px;
+    row-gap: 25px;
+}
+.block{
+    background-color: rgb(148, 148, 212);
+    color: black;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+.block h1{
+    font-size: 30px;
+}
+.block p{
+    font-size: 20px;
+}
+#heading{
+    text-align: center;
+    font-size: 45px;
+    color: whitesmoke;
+}
+
+
+/* detnists */
+.team{
+    margin-top: 35px;
+    display: flex;
+    color:rgb(20, 20, 76) ;
+    background-color: whitesmoke;
+}
+#team-img img{
+    width: 600px;
+    height: 65vh;
+    border-radius: 15px;    
+}
+#team-text{
+    padding: 25px;
+}
+#team-img{
+    padding: 25px;
+}
+#team-text p{
+    font-size: 28px;
+    text-align: justify;
+}
+#team-text h1{
+    font-size: 45px;
+    text-align: center;
+}
+
+
+/* doctors */
+#doctors{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 50px;
+    padding-left: 70px;
+    row-gap: 45px;
+    column-gap: 25px;
+}
+.doc img{
+    width: 400px;
+    height: 55vh;
+    border-radius: 15px; 
+}
+.doc{
+    border: solid black;   
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+}
+#icons{
+    display: inline;
+    font-size:25px;
+    column-gap: 40px;
+}
+#icons i:hover{
+    color: goldenrod;
+}
+
+/* contact */
+#contact-us{
+    background-color: rgb(20, 20, 76);
+    margin-top: 35px;
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation-delay: 0s;
+    animation: showcontent 0.5s   linear 1 forwards;
+    align-items: center;
+    text-align: center;
+    padding: 35px;
+    
+}
+@keyframes showcontent{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+#contact-us h1{
+    font-size: 45px;
+    color: white;
+}
+.message .box{
+    width: 80%;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    text-transform: none;
+    border-color: whitesmoke;
+
+}
+.box:hover{
+    background-color: rgb(236, 220, 220);
+    
+}
+#btn{
+    width: 75px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+#btn:hover{
+    background-color: antiquewhite;
+}
+.message h3{
+    color: whitesmoke;
+
+    font-size: 2rem;
+}
+textarea{
+    height: 30vh;
+}
+
+.container-1 i{
+    display: none;
+}
+@media screen and (max-width : 600px){
+    #copy-right{
+        width: 100%;
+    }
+    #footer{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        align-items: center;
+    }
+    #appointment{
+        margin-right: 15px;
+    }
+    #appointment h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .container5{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        align-items: center;
+    }
+    #btnn{
+        margin-left: 15px;
+        width: 30%;
+    }
+    #gallery{
+        margin-right: 15px;
+    }
+    .services-list{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+        margin-top: 50px;
+        padding: 0px 35px;
+    }
+    #services{
+        margin-right: 15px;
+    }
+    #intro{
+        display: grid;
+        grid-template-columns: repeat(1,fr);
+    }
+    .container-2{
+        width: 100%;
+    }
+    .container-4{
+        width: 100%;
+    }
+
+    #logo-2{
+        display: none;
+    }
+    .logo{
+        width: 90px;
+        height: 90px;
+    }
+    .container-4{
+        display: none;
+    }
+    body{
+        margin-right: 15px;
+    }
+
+
+    #about-us{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #about-img img{
+        width: 100%;
+    }
+    #vis-mis{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #vis{
+        display: grid;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #mis{
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #servicestxt{
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(1,1fr);
+        margin-right: 15px;
+    }
+    #servicesimg img{
+        width: 100%;
+        height: 270px;
+    }
+    .services-text{
+        text-align: justify;
+        margin-right: 15px;
+    }
+    #types{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-right: 15px;
+    }
+    #list-treat{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #treatments{
+        margin-right: 15px;
+    }
+    .team{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    #team-img img{
+        width: 100%;
+        height: 250px;
+    }
+    #team-text p{
+        text-align: justify;
+        font-size: 25px;
+    }
+    #doctors{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 0px;
+        padding-top: 25px;
+        margin-right: 15px;
+    }
+    .doc{
+        width: 100%;
+    }
+    .doc img{
+        width: 80%;
+        height:300px;
+    }
+    .nav-links a{
+        color:white;
+    }
+    .nav-links i{
+        display: block;
+        font-size: 25px;
+    }
+    .nav-links{
+        background-color: #000000;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 50vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    .nav-links a{
+        display: block;
+        margin: 25px;
+    }
+    #cross{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        color: white;
+    }
+    #menu{
+        display: block;
+        font-size: 45px;
+        color: white;
+        position: absolute;
+        top: 45px;
+        right: 45px;
+        cursor: pointer;
+    }
+    
+}

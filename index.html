@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+    <!-- Nav Bar -->
+    <div id="nav-bar">
+
+        <nav class="container-1">
+            <img src="dental-logo.png" alt="" class="logo">
+            <div class="nav-links" id="sidemenu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="dentist.html">Dentist's</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark" id="cross" onclick="closemenu()"></i>
+            </div>
+            <i class="fa-solid fa-bars"  id="menu" onclick="openmenu()"></i>
+            <img src="dental-logo.png" alt="" class="logo" id="logo-2">
+        </nav>
+    </div>
+
+
+    <!-- intro -->
+    <div id="intro">
+        <div class="container-2 " >
+            <h2 class="container2-text">Welcome To </h2>
+            <h1 class="container2-text">Happy Dental Clinic</h1>
+            <h2 class="container2-text"> Your smile is our reward</h2>
+            <a href="#appointment"><button>Appointment</button></a>
+        </div>
+        <div class="container-4 ">
+            <img src="hospital-main-img.jpg" alt="">
+        </div>
+    </div>
+
+
+    <!-- simple services -->
+    <div id="services" class="reveal">
+        <div class="container3">
+            <h1 id="serve">Facilities We Provide</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-notes-medical special-logo"></i>
+                    <h2 class="h2">Free Checkup</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-truck-medical special-logo"></i>
+                    <h2 class="h2">24/7 Ambulance</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user-doctor special-logo"></i>
+                    <h2 class="h2">Experts Consultancy</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-capsules special-logo"></i>
+                    <h2 class="h2">Medicines</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bed special-logo"></i>
+                    <h2 class="h2">Bed Facility</h2>
+                </div>
+                <div>
+                    <i class="fa-regular fa-heart special-logo"></i>
+                    <h2 class="h2">Total Care</h2>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    <!-- gallery -->
+    <section class="reveal">
+        <div id="gallery" >
+            <h1>Our Gallery</h1>
+            <div id="images" >
+                <img src="gallery-1.jpg" alt="">
+                <img src="gallery-2.jpg" alt="">
+                <img src="gallery-3.jpg" alt="">
+                <img src="gallery-4.jpg" alt="">
+                <img src="gallery-5.jpg" alt="">
+                <img src="gallery-6.jpg" alt="">
+                <img src="gallery-7.jpg" alt="">
+                <img src="gallery-8.jpg" alt="">
+                <img src="gallery-9.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- booking -->
+    <section id="booking"> 
+        <div id="appointment" class="reveal">
+            <h1 class="appoint">APPOINTMENT</h1>
+            <div class="container5">
+                <div class="appimage">
+                    <img src="appointment.jpg" class="appointment-image">
+                </div>
+                <div class="booking">
+                    <h3>Appointment Form</h3>
+                    <input type="text" placeholder="Your Name" class="box">
+                    <input type="text" placeholder="Your Email ID" class="box">
+                    <input type="text" placeholder="Mobile Number" class="box">
+                    <input type="date" class="box">
+                    <input type="time" class="box">
+                    <div class="submit-cancel">
+                        <!-- <input type="submit" value="Book Now " id="btn">
+                        <input type="submit" value="Cancel" id="btn"> -->
+                        <button id="btnn">Submit</button>
+                        <button id="btnn">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <div id="footer">
+        <div id="contact" class="reveal">
+            <h1>Contact Info</h1>
+            <p>Have a question, suggestion, or just want to say hello? We'd love to hear from you! Drop us a message using the form below, and we'll get back to you as soon as possible. </p>
+            <div id="links">
+                <h4><i class="fa-solid fa-house"></i>Kothaguda , Hyderabad</h4>
+                <h4><i class="fa-solid fa-phone"></i>+91 9121557571</h4>
+                <h4><i class="fa-solid fa-envelope"></i> ngs@pvt.com</h4>
+                <h4><i class="fa-solid fa-globe"></i>ngs@pvt.com</h4>
+            </div>
+        </div>
+        <div id="our-serives" class="reveal">
+            <h1>Our Services</h1>
+            <div id="services-list">
+                <h4> >>Dental Dictionary</h4>
+                <h4> >>Dental Sealands</h4>
+                <h4> >>Dental Implants</h4>
+                <h4> >>General Dentistry</h4>
+                <h4> >>Sedation Dentistry</h4>
+            </div>
+        </div>
+        <div id="quick-links" class="reveal">
+            <h1>Quick Links</h1>
+            <div id="q-links">
+                <a href="index.html"><h4>Index</h4></a>
+                <a href="about.html"><h4>About</h4></a>
+                <a href="services.html"><h4>Services</h4></a>
+                <a href="dentist.html"><h4>Dentist</h4></a>
+                <a href="contact.html"><h4>Contact</h4></a>
+            </div>
+        </div>
+        <div id="Opening-hours" class="reveal">
+            <h1>Opening Hours</h1>
+            <div id="timings">
+                <h4>Sunday 8:00am-10:00pm</h4>
+                <h4>Monday 8:00am-10:00pm</h4>
+                <h4>Tuesday 8:00am-10:00pm</h4>
+                <h4>Wednesday 8:00am-10:00pm</h4>
+                <h4>Thursday 8:00am-10:00pm</h4>
+                <h4>Friday 8:00am-10:00pm</h4>
+                <h4>Saturday 8:00am-10:00pm</h4>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- copy right -->
+
+    <div id="copy-right" >
+        <h3 >Copyright By NGS.PVT.LTD-2024</h3>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
